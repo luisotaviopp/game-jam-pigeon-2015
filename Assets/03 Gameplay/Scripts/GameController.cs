@@ -6,6 +6,14 @@ public class GameController : MonoBehaviour
 	public float lenghtBackground = 40.0f;
 	float nextBackgroundPosition = 45.0f;
 
+	public GameObject[] blocks;
+
+	public float respawDelay;
+
+	public float forewardRunner = 10.0f;
+
+	float timeRespaw;
+
 	public float getNextBackgroundPosition()
 	{
 		nextBackgroundPosition += lenghtBackground;
@@ -13,12 +21,23 @@ public class GameController : MonoBehaviour
 	}
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
+		timeRespaw += Time.deltaTime; 
+		if (respawDelay - timeRespaw < 0) 
+		{
+			timeRespaw = 0;
+			Debug.Log("Instatiate");
+			int indicePrefab = Random.Range (0, blocks.Length);
+			GameObject instatiate = blocks [indicePrefab];
+			Vector3 newPosition = new Vector3(Runner.distanceTraveled+forewardRunner, instatiate.transform.position.y, instatiate.transform.position.z);
+			GameObject.Instantiate (instatiate,newPosition,Quaternion.identity);
+		}
 	}
 }
