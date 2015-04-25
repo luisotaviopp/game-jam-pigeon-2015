@@ -33,7 +33,6 @@ public class GameController : MonoBehaviour
 		if (respawDelay - timeRespaw < 0) 
 		{
 			timeRespaw = 0;
-			Debug.Log("Instatiate");
 			int indicePrefab = Random.Range (0, blocks.Length);
 			GameObject instatiate = blocks [indicePrefab];
 			Vector3 newPosition = new Vector3(Runner.distanceTraveled+forewardRunner, instatiate.transform.position.y, instatiate.transform.position.z);
