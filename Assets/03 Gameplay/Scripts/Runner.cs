@@ -12,9 +12,7 @@ public class Runner : MonoBehaviour
 	public float scaleVelocity = 1.001f;
 	public float velocity;
 
-
-
-
+	public float velocityYScale = 10f;
 
 	void Start()
 	{
@@ -25,9 +23,15 @@ public class Runner : MonoBehaviour
 	{	
 		velocity *= scaleVelocity;
 
-		transform.Translate(velocity * Time.deltaTime, 0f, 0f);
+		float yDestino = -1 * limit + (scrollBar.value * 2 * limit);
 
-		transform.position = new Vector3 (transform.position.x, -1 * limit + (scrollBar.value * 2 * limit) , transform.position.z);
+		//Debug.Log (yDestino);
+
+		float yDiference = yDestino - transform.position.y;
+
+		//Debug.Log ("Diference: " + yDiference);
+
+		transform.Translate(velocity * Time.deltaTime, yDiference*Time.deltaTime, 0f);
 
 		distanceTraveled = transform.localPosition.x;
 	}
