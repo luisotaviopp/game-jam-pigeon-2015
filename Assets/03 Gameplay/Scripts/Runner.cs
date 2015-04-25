@@ -8,12 +8,14 @@ public class Runner : MonoBehaviour
 	public float limit = 4.6f;
 	public float velocity = 5f;
 
+	public static float distanceTraveled;
+
 	void Update () 
-	{
-		Debug.Log (scrollBar.value);
-	
+	{	
 		transform.Translate(velocity * Time.deltaTime, 0f, 0f);
 
 		transform.position = new Vector3 (transform.position.x, -1 * limit + (scrollBar.value * 2 * limit) , transform.position.z);
+
+		distanceTraveled = transform.localPosition.x;
 	}
 }
