@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: 2eb107148f28b426da9c2e33ca474248
+timeCreated: 1430004249
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: blende1
+    100002: cabeca_joint9
+    100004: geometria
+    100006: gota
+    100008: //RootNode
+    100010: gota_jont_grupo
+    100012: gota_normal1
+    100014: group1
+    100016: joint10
+    100018: joint11
+    100020: joint12
+    100022: joint13
+    100024: joint14
+    100026: joint15
+    100028: joint18
+    100030: joint19
+    100032: lingua
+    100034: lingua_joint17
+    100036: nurbsCircle1
+    100038: ohlo_d_joint16
+    100040: oho1
+    100042: olho2
+    100044: olho_e_joint8
+    100046: pCube2
+    100048: personagem
+    400000: blende1
+    400002: cabeca_joint9
+    400004: geometria
+    400006: gota
+    400008: //RootNode
+    400010: gota_jont_grupo
+    400012: gota_normal1
+    400014: group1
+    400016: joint10
+    400018: joint11
+    400020: joint12
+    400022: joint13
+    400024: joint14
+    400026: joint15
+    400028: joint18
+    400030: joint19
+    400032: lingua
+    400034: lingua_joint17
+    400036: nurbsCircle1
+    400038: ohlo_d_joint16
+    400040: oho1
+    400042: olho2
+    400044: olho_e_joint8
+    400046: pCube2
+    400048: personagem
+    4300000: gota_normal1
+    4300002: oho1
+    4300004: lingua
+    4300006: olho2
+    7400000: gota_animacao2_correr
+    7400002: gota_animacao2_virar_baixo
+    7400004: gota_animacao2_virar_cima
+    9500000: //RootNode
+    13700000: gota_normal1
+    13700002: lingua
+    13700004: oho1
+    13700006: olho2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: gota_animacao2_correr
+      takeName: gota_animacao2
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: gota
+        weight: 1
+      - path: gota/geometria
+        weight: 1
+      - path: gota/geometria/blende1
+        weight: 1
+      - path: gota/geometria/pCube2
+        weight: 1
+      - path: gota/geometria/personagem
+        weight: 1
+      - path: gota/geometria/personagem/gota_normal1
+        weight: 1
+      - path: gota/geometria/personagem/lingua
+        weight: 1
+      - path: gota/geometria/personagem/oho1
+        weight: 1
+      - path: gota/geometria/personagem/olho2
+        weight: 1
+      - path: gota/nurbsCircle1
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17/joint18
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17/joint18/joint19
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/ohlo_d_joint16
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/olho_e_joint8
+        weight: 1
+      - path: group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: gota_animacao2_virar_baixo
+      takeName: gota_animacao2
+      firstFrame: 61
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: gota
+        weight: 1
+      - path: gota/geometria
+        weight: 1
+      - path: gota/geometria/blende1
+        weight: 1
+      - path: gota/geometria/pCube2
+        weight: 1
+      - path: gota/geometria/personagem
+        weight: 1
+      - path: gota/geometria/personagem/gota_normal1
+        weight: 1
+      - path: gota/geometria/personagem/lingua
+        weight: 1
+      - path: gota/geometria/personagem/oho1
+        weight: 1
+      - path: gota/geometria/personagem/olho2
+        weight: 1
+      - path: gota/nurbsCircle1
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17/joint18
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17/joint18/joint19
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/ohlo_d_joint16
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/olho_e_joint8
+        weight: 1
+      - path: group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: gota_animacao2_virar_cima
+      takeName: gota_animacao2
+      firstFrame: 69
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: gota
+        weight: 1
+      - path: gota/geometria
+        weight: 1
+      - path: gota/geometria/blende1
+        weight: 1
+      - path: gota/geometria/pCube2
+        weight: 1
+      - path: gota/geometria/personagem
+        weight: 1
+      - path: gota/geometria/personagem/gota_normal1
+        weight: 1
+      - path: gota/geometria/personagem/lingua
+        weight: 1
+      - path: gota/geometria/personagem/oho1
+        weight: 1
+      - path: gota/geometria/personagem/olho2
+        weight: 1
+      - path: gota/nurbsCircle1
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17/joint18
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17/joint18/joint19
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/ohlo_d_joint16
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/olho_e_joint8
+        weight: 1
+      - path: group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
