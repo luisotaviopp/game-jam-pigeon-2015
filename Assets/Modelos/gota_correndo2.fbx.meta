@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 3807b9ae2c5e74145836e3be8ea9e45a
+timeCreated: 1429994433
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: bend1Handle
+    100002: blende1
+    100004: cabeca_joint9
+    100006: geometria
+    100008: gota
+    100010: //RootNode
+    100012: gota_jont_grupo
+    100014: gota_normal1
+    100016: group1
+    100018: joint10
+    100020: joint11
+    100022: joint12
+    100024: joint13
+    100026: joint14
+    100028: joint15
+    100030: joint18
+    100032: joint19
+    100034: lingua
+    100036: lingua_joint17
+    100038: nurbsCircle1
+    100040: ohlo_d_joint16
+    100042: oho1
+    100044: olho2
+    100046: olho_e_joint8
+    100048: pCube2
+    100050: personagem
+    400000: bend1Handle
+    400002: blende1
+    400004: cabeca_joint9
+    400006: geometria
+    400008: gota
+    400010: //RootNode
+    400012: gota_jont_grupo
+    400014: gota_normal1
+    400016: group1
+    400018: joint10
+    400020: joint11
+    400022: joint12
+    400024: joint13
+    400026: joint14
+    400028: joint15
+    400030: joint18
+    400032: joint19
+    400034: lingua
+    400036: lingua_joint17
+    400038: nurbsCircle1
+    400040: ohlo_d_joint16
+    400042: oho1
+    400044: olho2
+    400046: olho_e_joint8
+    400048: pCube2
+    400050: personagem
+    4300000: gota_normal1
+    4300002: oho1
+    4300004: lingua
+    4300006: olho2
+    7400000: gota_animacao
+    9500000: //RootNode
+    13700000: gota_normal1
+    13700002: lingua
+    13700004: oho1
+    13700006: olho2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
