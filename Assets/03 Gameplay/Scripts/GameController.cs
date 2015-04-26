@@ -32,13 +32,24 @@ public class GameController : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		GameEventManager.GameStart += GameStart;
+		GameEventManager.GameOver += GameOver;
+	}
+
+	private void GameStart () 
+	{
+		timeRespaw = 0;
+		enabled = true;
+	}
 	
+	private void GameOver () 
+	{
+		enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-
 		fogo.color = new Color (1, 1 - scrollBar.value, 1 - scrollBar.value);
 		gelo.color = new Color (scrollBar.value, scrollBar.value, 1); 
 

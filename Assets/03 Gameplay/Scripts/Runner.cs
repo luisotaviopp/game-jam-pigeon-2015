@@ -16,9 +16,40 @@ public class Runner : MonoBehaviour
 
 	public GameObject gaz,liquido, solido;
 
-	void Start()
+	private Vector3 startPosition;
+	
+	void Start () 
+	{
+		GameEventManager.GameStart += GameStart;
+		GameEventManager.GameOver += GameOver;
+		startPosition = transform.localPosition;
+		liquido.SetActive(false);
+		enabled = false;
+	}
+	
+	private void GameStart () 
 	{
 		velocity = startVelocity;
+		distanceTraveled = 0f;
+		transform.localPosition = startPosition;
+		liquido.SetActive(true);
+		enabled = true;
+	}
+	
+	private void GameOver () 
+	{
+		gaz.SetActive (false);
+		liquido.SetActive (false);
+		solido.SetActive (false);
+		enabled = false;
+	}
+
+	void OnCollisionEnter(Collision collision) 
+	{
+		if(collision.gameObject.tag == "Blocks")
+		{
+			GameEventManager.TriggerGameOver();
+		}
 	}
 
 	void Update () 
