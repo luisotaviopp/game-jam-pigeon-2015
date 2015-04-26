@@ -36,12 +36,13 @@ public class GameController : MonoBehaviour
 		GameEventManager.GameStart += GameStart;
 		GameEventManager.GameOver += GameOver;
 		enabled = false;
-		scrollBar.value = 0.5f;
 		startBackgroundPosition = nextBackgroundPosition;
 	}
 
 	private void GameStart () 
 	{
+		scrollBar.value = 0.5f;
+
 		nextBackgroundPosition = startBackgroundPosition;
 
 		GameObject[] blocks = GameObject.FindGameObjectsWithTag ("Blocks");
