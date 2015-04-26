@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2eb107148f28b426da9c2e33ca474248
-timeCreated: 1430004249
+guid: e13724b910c67473eb14de30a6008011
+timeCreated: 1430025519
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -59,9 +59,10 @@ ModelImporter:
     4300002: oho1
     4300004: lingua
     4300006: olho2
-    7400000: gota_animacao2_correr
-    7400002: gota_animacao2_virar_baixo
-    7400004: gota_animacao2_virar_cima
+    7400000: gota_animacao2_corer
+    7400002: gota_animacao2_baixo
+    7400004: gota_animacao2_cima
+    7400006: gota_animacao2_triste
     9500000: //RootNode
     13700000: gota_normal1
     13700002: lingua
@@ -84,10 +85,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: gota_animacao2_correr
+      name: gota_animacao2_corer
       takeName: gota_animacao2
       firstFrame: 1
-      lastFrame: 60
+      lastFrame: 58
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -160,10 +161,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: gota_animacao2_virar_baixo
+      name: gota_animacao2_baixo
       takeName: gota_animacao2
-      firstFrame: 61
-      lastFrame: 68
+      firstFrame: 59
+      lastFrame: 69
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -236,10 +237,86 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: gota_animacao2_virar_cima
+      name: gota_animacao2_cima
       takeName: gota_animacao2
       firstFrame: 69
-      lastFrame: 79
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: gota
+        weight: 1
+      - path: gota/geometria
+        weight: 1
+      - path: gota/geometria/blende1
+        weight: 1
+      - path: gota/geometria/pCube2
+        weight: 1
+      - path: gota/geometria/personagem
+        weight: 1
+      - path: gota/geometria/personagem/gota_normal1
+        weight: 1
+      - path: gota/geometria/personagem/lingua
+        weight: 1
+      - path: gota/geometria/personagem/oho1
+        weight: 1
+      - path: gota/geometria/personagem/olho2
+        weight: 1
+      - path: gota/nurbsCircle1
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/joint10/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17/joint18
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/lingua_joint17/joint18/joint19
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/ohlo_d_joint16
+        weight: 1
+      - path: gota/nurbsCircle1/gota_jont_grupo/cabeca_joint9/olho_e_joint8
+        weight: 1
+      - path: group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: gota_animacao2_triste
+      takeName: gota_animacao2
+      firstFrame: 80
+      lastFrame: 85
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

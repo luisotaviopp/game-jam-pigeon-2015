@@ -41,13 +41,19 @@ public class Runner : MonoBehaviour
 		{
 			gaz.SetActive(true);
 			liquido.SetActive(false);
-			//solido.SetActive(false);
+			solido.SetActive(false);
 		}
-		else if( transform.position.y < 1.5)
+		else if( transform.position.y <= 1.5 && transform.position.y >= -1)
 		{
 			gaz.SetActive(false);
 			liquido.SetActive(true);
-			//solido.SetActive(false);
+			solido.SetActive(false);
+		}
+		else if( transform.position.y < -1)
+		{
+			gaz.SetActive(false);
+			liquido.SetActive(false);
+			solido.SetActive(true);
 		}
 
 	}
