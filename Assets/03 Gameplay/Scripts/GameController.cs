@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour 
 {
@@ -15,6 +16,10 @@ public class GameController : MonoBehaviour
 	public float forewardRunner = 10.0f;
 
 	public Vector3 minRotation, maxRotation;
+
+	public Image fogo,gelo;
+
+	public Scrollbar scrollBar;
 
 	float timeRespaw;
 
@@ -33,6 +38,11 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+
+		fogo.color = new Color (1, 1 - scrollBar.value, 1 - scrollBar.value);
+		gelo.color = new Color (scrollBar.value, scrollBar.value, 1); 
+
+
 		timeRespaw += Time.deltaTime; 
 		if (respawDelay - timeRespaw < 0) 
 		{

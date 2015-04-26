@@ -37,7 +37,7 @@ public class Runner : MonoBehaviour
 
 		distanceTraveled = transform.localPosition.x;
 
-		if(transform.position.y > 1.5)
+		if(transform.position.y > 1.3)
 		{
 			gaz.SetActive(true);
 			liquido.SetActive(false);
