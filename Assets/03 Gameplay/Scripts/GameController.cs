@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour
 {
 	public float lenghtBackground = 41.39f;
 	public float nextBackgroundPosition = 93.79f;
+	float startBackgroundPosition;
 
 	public GameObject[] blocks;
 
@@ -36,16 +37,20 @@ public class GameController : MonoBehaviour
 		GameEventManager.GameOver += GameOver;
 		enabled = false;
 		scrollBar.value = 0.5f;
+		startBackgroundPosition = nextBackgroundPosition;
 	}
 
 	private void GameStart () 
 	{
+		nextBackgroundPosition = startBackgroundPosition;
+
 		GameObject[] blocks = GameObject.FindGameObjectsWithTag ("Blocks");
 		for(int i=0; i<blocks.Length; i++)
 		{
 			Destroy(blocks[i]);
 		}
 		timeRespaw = 0;
+
 		enabled = true;
 	}
 	
