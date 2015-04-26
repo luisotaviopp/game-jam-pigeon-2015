@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4c4bae6f918ab4068ad11d49808a7b17
-timeCreated: 1429950685
+guid: 60626f235d395e342853363a1a085abe
+timeCreated: 1430007611
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cano_1
+    4300000: Cano_3_Collider
     9500000: //RootNode
   materials:
     importMaterials: 0
