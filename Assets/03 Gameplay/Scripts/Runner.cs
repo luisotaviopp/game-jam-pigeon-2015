@@ -14,6 +14,8 @@ public class Runner : MonoBehaviour
 
 	public float velocityYScale = 10f;
 
+	public GameObject gaz,liquido, solido;
+
 	void Start()
 	{
 		velocity = startVelocity;
@@ -34,5 +36,19 @@ public class Runner : MonoBehaviour
 		transform.Translate(velocity * Time.deltaTime, yDiference*Time.deltaTime, 0f);
 
 		distanceTraveled = transform.localPosition.x;
+
+		if(transform.position.y > 1.5)
+		{
+			gaz.SetActive(true);
+			liquido.SetActive(false);
+			//solido.SetActive(false);
+		}
+		else if( transform.position.y < 1.5)
+		{
+			gaz.SetActive(false);
+			liquido.SetActive(true);
+			//solido.SetActive(false);
+		}
+
 	}
 }

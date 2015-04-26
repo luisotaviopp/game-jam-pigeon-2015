@@ -1,31 +1,15 @@
 fileFormatVersion: 2
-guid: 711cf4578b48bf14a907896c04073bd7
-timeCreated: 1430009564
+guid: 120561799b43b0b4e906067a91cd4fbd
+timeCreated: 1430009563
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: joint1
-    100002: joint2
-    100004: joint3
-    100006: //RootNode
-    100008: Lata
-    100010: polySurface6
-    100012: Tampa
-    400000: joint1
-    400002: joint2
-    400004: joint3
-    400006: //RootNode
-    400008: Lata
-    400010: polySurface6
-    400012: Tampa
-    2300000: Lata
-    2300002: Tampa
-    3300000: Lata
-    3300002: Tampa
-    4300000: Tampa
-    4300002: Lata
-    7400000: Take 001
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cano_1
     9500000: //RootNode
   materials:
     importMaterials: 0
@@ -80,7 +64,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5599390aef040dd47a8d07e6ecbd0403
-timeCreated: 1430009564
+guid: 22db7cbc1c1d0e241a857abb52d76290
+timeCreated: 1430009563
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cano_2
+    4300000: Cano_3
     9500000: //RootNode
   materials:
     importMaterials: 0
@@ -64,7 +64,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		/*
 		timeRespaw += Time.deltaTime; 
 		if (respawDelay - timeRespaw < 0) 
 		{
@@ -37,6 +38,6 @@ public class GameController : MonoBehaviour
 			GameObject instatiate = blocks [indicePrefab];
 			Vector3 newPosition = new Vector3(Runner.distanceTraveled+forewardRunner, instatiate.transform.position.y, instatiate.transform.position.z);
 			GameObject.Instantiate (instatiate,newPosition,Quaternion.identity);
-		}
+		}*/
 	}
 }
