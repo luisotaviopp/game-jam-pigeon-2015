@@ -6,6 +6,19 @@ public class BackgroundController : MonoBehaviour
 	public GameController game;
 	public float maxDistance = 30.0f;
 
+	public Vector3 startPosition;
+
+	void Start () 
+	{
+		startPosition = transform.position;
+		GameEventManager.GameStart += GameStart;
+	}
+
+	private void GameStart () 
+	{
+		transform.position = startPosition;
+	}
+
 	// Update is called once per frame
 	void Update () 
 	{

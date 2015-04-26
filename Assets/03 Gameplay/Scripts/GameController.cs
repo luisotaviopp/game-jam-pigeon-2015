@@ -34,10 +34,17 @@ public class GameController : MonoBehaviour
 	{
 		GameEventManager.GameStart += GameStart;
 		GameEventManager.GameOver += GameOver;
+		enabled = false;
+		scrollBar.value = 0.5f;
 	}
 
 	private void GameStart () 
 	{
+		GameObject[] blocks = GameObject.FindGameObjectsWithTag ("Blocks");
+		for(int i=0; i<blocks.Length; i++)
+		{
+			Destroy(blocks[i]);
+		}
 		timeRespaw = 0;
 		enabled = true;
 	}
