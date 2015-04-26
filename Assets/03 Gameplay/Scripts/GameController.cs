@@ -4,9 +4,11 @@ using System.Collections;
 public class GameController : MonoBehaviour 
 {
 	public float lenghtBackground = 41.39f;
-	float nextBackgroundPosition = 93.79f;
+	public float nextBackgroundPosition = 93.79f;
 
 	public GameObject[] blocks;
+
+	public float[] Layers;
 
 	public float respawDelay;
 
@@ -38,7 +40,9 @@ public class GameController : MonoBehaviour
 			int indicePrefab = Random.Range (0, blocks.Length);
 			GameObject instatiate = blocks [indicePrefab];
 
-			Vector3 newPosition = new Vector3(Runner.distanceTraveled+forewardRunner, instatiate.transform.position.y, instatiate.transform.position.z);
+			float layer = Layers[Random.Range(0,Layers.Length)];
+
+			Vector3 newPosition = new Vector3(Runner.distanceTraveled+forewardRunner,layer, instatiate.transform.position.z);
 
 			Quaternion rotation = new Quaternion(
 				Random.Range(minRotation.x, maxRotation.x),

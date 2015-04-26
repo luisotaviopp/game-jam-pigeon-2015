@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4f35a955eefff5145987ed072d29f5f9
-timeCreated: 1430012273
+guid: 6c9615adad636604bbeb782cf39ed08f
+timeCreated: 1430013842
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Chiclete
+    4300000: Tampinha
     9500000: //RootNode
   materials:
     importMaterials: 0
@@ -64,7 +64,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
