@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
 
 	public float forewardRunner = 10.0f;
 
+	public Vector3 minRotation, maxRotation;
+
 	float timeRespaw;
 
 	public float getNextBackgroundPosition()
@@ -29,15 +31,21 @@ public class GameController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		/*
 		timeRespaw += Time.deltaTime; 
 		if (respawDelay - timeRespaw < 0) 
 		{
 			timeRespaw = 0;
 			int indicePrefab = Random.Range (0, blocks.Length);
 			GameObject instatiate = blocks [indicePrefab];
+
 			Vector3 newPosition = new Vector3(Runner.distanceTraveled+forewardRunner, instatiate.transform.position.y, instatiate.transform.position.z);
-			GameObject.Instantiate (instatiate,newPosition,Quaternion.identity);
-		}*/
+
+			Quaternion rotation = new Quaternion(
+				Random.Range(minRotation.x, maxRotation.x),
+				Random.Range(minRotation.y,maxRotation.y),
+			    Random.Range(minRotation.z,maxRotation.z),0f);
+
+			GameObject.Instantiate (instatiate,newPosition,rotation);
+		}
 	}
 }
