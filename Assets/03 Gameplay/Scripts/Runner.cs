@@ -17,6 +17,8 @@ public class Runner : MonoBehaviour
 	public GameObject gaz,liquido, solido;
 
 	private Vector3 startPosition;
+
+	public AudioClip gameOverClip;
 	
 	void Start () 
 	{
@@ -49,6 +51,10 @@ public class Runner : MonoBehaviour
 		if(collision.gameObject.tag == "Blocks")
 		{
 			GameEventManager.TriggerGameOver();
+
+			GetComponent<AudioSource>().PlayOneShot(collision.gameObject.GetComponent<BlockController>().effect);
+
+			GetComponent<AudioSource>().PlayOneShot(gameOverClip);
 		}
 	}
 
