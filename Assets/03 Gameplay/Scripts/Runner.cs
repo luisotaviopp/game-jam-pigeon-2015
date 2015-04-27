@@ -19,6 +19,12 @@ public class Runner : MonoBehaviour
 	private Vector3 startPosition;
 
 	public AudioClip gameOverClip;
+
+	public AudioClip switchGaz;
+
+	enum estados {gaz,liquido,solido};
+
+	estados estado = estados.liquido;
 	
 	void Start () 
 	{
@@ -74,24 +80,31 @@ public class Runner : MonoBehaviour
 
 		distanceTraveled = transform.localPosition.x;
 
-		if(transform.position.y > 1.3)
+		if(transform.position.y > 1.3 && estado != estados.gaz)
 		{
+			estado = estados.gaz;
+			GetComponent<AudioSource>().PlayOneShot(switchGaz);
 			gaz.SetActive(true);
 			liquido.SetActive(false);
 			solido.SetActive(false);
 		}
-		else if( transform.position.y <= 1.5 && transform.position.y >= -1)
+		else if( transform.position.y <= 1.5 && transform.position.y >= -1 && estado != estados.liquido)
 		{
+			estado = estados.liquido;
 			gaz.SetActive(false);
 			liquido.SetActive(true);
 			solido.SetActive(false);
 		}
-		else if( transform.position.y < -1)
+		else if( transform.position.y < -1 && estado != estados.solido)
 		{
+			estado = estados.solido;
 			gaz.SetActive(false);
 			liquido.SetActive(false);
 			solido.SetActive(true);
 		}
-
 	}
+
+
+
+
 }
