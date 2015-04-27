@@ -7,7 +7,7 @@ public class SplashScreenController : MonoBehaviour
     public float logoTime = 2;
     float counter = 0;
     int logoIndex = 0;
-    string nextLevel = "Main Menu";
+	public string nextLevel = "Esgoto";
     // Update is called once per frame
 
     void Start()
