@@ -35,6 +35,8 @@ public class GameController : MonoBehaviour
 	{
 		GameEventManager.GameStart += GameStart;
 		GameEventManager.GameOver += GameOver;
+		GameEventManager.GamePause += GamePause;
+		GameEventManager.GameResume += GameResume;
 		enabled = false;
 		startBackgroundPosition = nextBackgroundPosition;
 	}
@@ -59,6 +61,22 @@ public class GameController : MonoBehaviour
 	{
 		enabled = false;
 	}
+
+	private void GamePause () 
+	{
+		enabled = false;
+	}
+
+	private void GameResume () 
+	{
+		enabled = true;
+	}
+
+	public void ResumeGame()
+	{
+		GameEventManager.TriggerResume ();
+	}
+
 	
 	// Update is called once per frame
 	void Update () 

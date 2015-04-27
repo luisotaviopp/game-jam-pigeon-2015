@@ -5,58 +5,79 @@ using UnityEngine.UI;
 public class GUIManager : MonoBehaviour 
 {
 	
-	public Text gameOverText, instructionsText, runnerText, highScore, score;
+	public GameObject gameOverText, instructionsText, runnerText, highScore, score;
 
 	string startScoreText;
 	string startHighScoreText;
+
+	public GameObject panelStop;
+
+	public bool isEscape = false;
 
 	void Start () 
 	{
 		GameEventManager.GameStart += GameStart;
 		GameEventManager.GameOver += GameOver;
-		gameOverText.enabled = false;
+		gameOverText.SetActive (false);
 
-		if(highScore!=null)
-		highScore.enabled = false;
+		if (highScore != null)
+			highScore.SetActive (false);
+
+		if (score != null)
+			score.SetActive (false);
 
 		if(score!=null)
-		score.enabled = false;
-
-		if(score!=null)
-		startScoreText = score.text;
+			startScoreText = score.GetComponent<Text>().text;
 
 		if(highScore!=null)
-		startHighScoreText = highScore.text;
+			startHighScoreText = highScore.GetComponent<Text>().text;
 	}
 
 	void Update () 
 	{
-		if(Input.anyKeyDown)
+
+		if(Input.GetMouseButtonDown(0))
 		{
-			GameEventManager.TriggerGameStart();
+			if(!isEscape)
+			{
+				GameEventManager.TriggerGameStart();
+			}
+		}
+
+
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			if(isEscape)
+			{
+				panelStop.SetActive(true);
+				GameEventManager.TriggerPause();
+			}
 		}
 	}
 
 	private void GameStart () 
 	{
-		gameOverText.enabled = false;
-		instructionsText.enabled = false;
-		runnerText.enabled = false;
+		gameOverText.SetActive (false); 
+		instructionsText.SetActive (false);
+		runnerText.SetActive (false);
 
-		if(highScore!=null)
-		highScore.enabled = false;
-		if(score!=null)
-		score.enabled = false;
+		if (highScore != null)
+			highScore.SetActive (false);
+		if (score != null)
+			score.SetActive (false);
 
-		enabled = false;
+		isEscape = true;
 	}
 
 	private void GameOver () 
 	{
+
+		isEscape = false;
+
 		Debug.Log (Runner.distanceTraveled);
 
 		if(score!=null)
-		score.text = startScoreText+" "+Runner.distanceTraveled;
+			score.GetComponent<Text>().text = startScoreText+" "+Runner.distanceTraveled;
 		
 		if(Runner.distanceTraveled > PlayerPrefs.GetFloat("HighScore"))
 		{
@@ -64,16 +85,14 @@ public class GUIManager : MonoBehaviour
 		}
 
 		if(highScore!=null)
-		highScore.text = startHighScoreText+" "+PlayerPrefs.GetFloat("HighScore");
-		if(highScore!=null)
-		highScore.enabled = true;
+		highScore.GetComponent<Text>().text = startHighScoreText+" "+PlayerPrefs.GetFloat("HighScore");
+		if (highScore != null)
+			highScore.SetActive (true);
 
-		gameOverText.enabled = true;
-		instructionsText.enabled = true;
+		gameOverText.SetActive (true);
+		instructionsText.SetActive (true);
 
-		if(score!=null)
-		score.enabled = true;
-
-		enabled = true;
+		if (score != null)
+			score.SetActive (true);
 	}
 }

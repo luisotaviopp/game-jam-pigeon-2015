@@ -5,7 +5,7 @@ public static class GameEventManager {
 	
 	public delegate void GameEvent();
 
-	public static event GameEvent GameStart, GameOver;
+	public static event GameEvent GameStart, GameOver, GamePause, GameResume;
 
 	public static void TriggerGameStart()
 	{
@@ -22,4 +22,21 @@ public static class GameEventManager {
 			GameOver();
 		}
 	}
+
+	public static void TriggerPause()
+	{
+		if(GamePause != null)
+		{
+			GamePause();
+		}
+	}
+
+	public static void TriggerResume()
+	{
+		if(GameResume != null)
+		{
+			GameResume();
+		}
+	}
+
 }

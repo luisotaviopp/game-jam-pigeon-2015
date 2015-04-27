@@ -30,6 +30,9 @@ public class Runner : MonoBehaviour
 	{
 		GameEventManager.GameStart += GameStart;
 		GameEventManager.GameOver += GameOver;
+		GameEventManager.GamePause += GamePause;
+		GameEventManager.GameResume += GameResume;
+
 		startPosition = transform.localPosition;
 		liquido.SetActive(false);
 		enabled = false;
@@ -62,6 +65,16 @@ public class Runner : MonoBehaviour
 
 			GetComponent<AudioSource>().PlayOneShot(gameOverClip);
 		}
+	}
+
+	private void GamePause () 
+	{
+		enabled = false;
+	}
+	
+	private void GameResume () 
+	{
+		enabled = true;
 	}
 
 	void Update () 
