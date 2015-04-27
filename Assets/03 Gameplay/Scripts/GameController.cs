@@ -76,7 +76,6 @@ public class GameController : MonoBehaviour
 	{
 		GameEventManager.TriggerResume ();
 	}
-
 	
 	// Update is called once per frame
 	void Update () 

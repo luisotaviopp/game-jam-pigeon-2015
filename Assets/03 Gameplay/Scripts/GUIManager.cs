@@ -74,8 +74,6 @@ public class GUIManager : MonoBehaviour
 
 		isEscape = false;
 
-		Debug.Log (Runner.distanceTraveled);
-
 		if(score!=null)
 			score.GetComponent<Text>().text = startScoreText+" "+Runner.distanceTraveled;
 		

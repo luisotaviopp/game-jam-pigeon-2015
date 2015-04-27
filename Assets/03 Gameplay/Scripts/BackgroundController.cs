@@ -16,7 +16,8 @@ public class BackgroundController : MonoBehaviour
 
 	private void GameStart () 
 	{
-		transform.position = startPosition;
+		//Debug.Log (GetComponent<Transform> ().position);
+		GetComponent<Transform>().position = startPosition;
 	}
 
 	// Update is called once per frame
